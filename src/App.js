@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import hotbg from './assets/hot.jpg'
-import coldbg from './assets/cold.jpg'
+// import coldbg from './assets/cold.jpg'
 import Description from './Components/Description';
 import { getFormattedWeatherData } from './weatherSerivce';
 
@@ -8,7 +8,7 @@ function App() {
   const [weather, setWeather] = useState(null);
   const [units, setUnits] = useState("metric");
   const [city, setCity] = useState("paris");
-  const [bg, setBg] = useState ("hotBg");
+  // const [bg, setBg] = useState ("hotBg");
 
   useEffect(() => {
     const fetchWeatherData = async () => {
@@ -36,7 +36,7 @@ function App() {
     }
   };
 
-  console.log(weather);
+  // console.log(weather);
 
   return (
     <div className="app" style={{ backgroundImage: `url(${hotbg})` }}>
